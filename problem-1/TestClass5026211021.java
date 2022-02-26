@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class TestClass5026211021 {
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		ComputeMethods5026211021 method = new ComputeMethods5026211021();
 
@@ -21,6 +20,5 @@ public class TestClass5026211021 {
 		System.out.println("Temp in celcius is " + celciusValue);
 		System.out.println("Hypotenuse (C) is " + c);
 		System.out.println("The sum of the dice values is " + method.roll());
-
 	}
 }
