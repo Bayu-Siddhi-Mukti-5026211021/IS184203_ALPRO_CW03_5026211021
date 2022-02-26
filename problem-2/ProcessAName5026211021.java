@@ -10,19 +10,15 @@ public class ProcessAName5026211021 {
         }
 
     	public static String processName(String fullName) {
-        	String[] arrayName = fullName.split(" ");
-        	String processName = arrayName[arrayName.length-1] + ",";
-        	if (arrayName.length > 2) {
-            		for (int i = 0; i < arrayName.length; i++) {
-                		if (i == arrayName.length-2) {
-                    			processName = processName + " " + arrayName[i].charAt(0) + ".";
-                    			break;
-                		} 
-				processName = processName + " " + arrayName[i];
-            		}
-            		return processName;
-        	} else {
-            		return arrayName[arrayName.length-1] + ", " + arrayName[0].charAt(0) + ".";
-        	}
-    	}
+        String[] arrayName = fullName.split(" ");
+        String processName = arrayName[arrayName.length-1] + ",";
+            for (int i = 0; i < arrayName.length; i++) {
+                if (i == arrayName.length-2) {
+                    processName = processName + " " + arrayName[i].charAt(0) + ".";
+                    break;
+                }
+                processName = processName + " " + arrayName[i];
+            }
+            return processName;
+    }
 }
