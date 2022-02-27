@@ -13,7 +13,7 @@ public class ProcessAName5026211021 {
  		String[] arrayName = fullName.split(" ");
         	String processName = arrayName[arrayName.length - 1] + ",";
         	for (int i = 0; i < arrayName.length - 1; i++) {
-           	processName = processName + " " + arrayName[i].charAt(0) + ".";
+           		processName = processName + " " + arrayName[i].charAt(0) + ".";
         	}
         	return processName;
    	}
